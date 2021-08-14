@@ -12,6 +12,9 @@ None(Wpf only)
 ### Code spec
 ```C#
 // File Name : MainWindow.xaml.cs
+// Author : YuHyun7
+// Date : 2021.08.14.
+
 
 // make HttpWebRequest instance
 var request = (HttpWebRequest)WebRequest.Create("http://127.0.0.1:8000/blog/catdogapi/");
