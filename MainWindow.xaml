@@ -1,0 +1,51 @@
+﻿<Window x:Class="CatAndDogClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CatAndDogClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1504">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border 
+            Grid.Row="0"
+            Grid.Column="0"
+            BorderBrush="Black" BorderThickness="2" Height="400" Width="400" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="10">
+            <Image
+          HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="UploadImage" Source="C:\Users\sonbi\source\repos\CatAndDogClient\CatAndDogClient\default.gif">
+            </Image>
+            
+        </Border>
+        <TextBox 
+            Grid.Row="0"
+            Grid.Column="1"
+            Name="JsonViewer"  FontSize="20">Select Image to upload</TextBox>
+        
+        <Button 
+            Grid.Row="1"
+            Grid.Column="0"
+            Name="FindImageButton" Height="50px" Width="200px"  FontSize="20" Click="FindImageButton_Click" >
+            Find Image</Button>
+        <Button 
+            Grid.Row="1"
+            Grid.Column="1"
+            Name="UploadButton" Height="50px" Width="200px"  FontSize="20" Click="UploadButton_Click" >
+            Upload Image</Button>
+        <Border 
+            Grid.Row="2"
+            Grid.ColumnSpan="2"
+            BorderBrush="Black" BorderThickness="1" Width="400px" Height="50px" HorizontalAlignment="Center">
+            <TextBox Name="StatusTextBlock"  FontSize="20">Select Image to upload</TextBox>
+        </Border>
+    </Grid>
+    
+</Window>
